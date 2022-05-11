@@ -1,0 +1,7 @@
+{
+
+    "env": {
+        "url": "complete"
+      },
+      "testFiles": "**/*.*"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "engagexr",
+  "version": "1.0.0",
+  "description": "Technical Test – QA Automation Engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/cypress/bin/cypress run -s cypress/integration/sample_spec.js --reporter junit",
+    "cypress:open": "cypress open",
+    "testChrome": "npm run test -- --browser chrome"
+  },
+  "author": "Paola Lucero",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions/"
+  },
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^9.1.3"
+  }
+}
